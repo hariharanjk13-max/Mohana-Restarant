@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Mohana restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background: #fafafa;
+    }
+    header {
+      background: #333;
+      color: aqua;
+      padding: 1rem;
+      text-align: center;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .menu-item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .menu-item .desc {
+      padding: 1rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+    .menu-item .desc h3 {
+      margin: 0 0 0.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .menu-item img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Mohana Hotel</h1>
+  </header>
+
+  <div class="menu">
+
+    <div class="menu-item">
+      <img src="/images/360_F_221251677_H4e9ADfkdV8kyLRLbHrU9oxzy4DDaxth.jpg" alt="Idli">
+      <div class="desc">
+        <h3>Idli</h3>
+        <p>Soft steamed rice served with a sambar & chutney.<br><br>
+            ₹ 6
+        </p>
+        <button>ADD</button>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/pori.jpg" alt="Pori">
+      <div class="desc">
+        <h3>Pori</h3>
+        <p>Crispy rice-lentil crepe, plain or masala, served hot.
+            <br><br> ₹ 15
+        </p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/Ven-Pongal-3.jpg" alt="Pongal">
+      <div class="desc">
+        <h3>Pongal</h3>
+        <p>Delicious South-Indian style Pongal, warm and comforting.
+             <br><br> ₹ 30
+        </p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/vada.jpeg" alt="Vadai">
+      <div class="desc">
+        <h3>Vadai</h3>
+        <p>Crispy and tasty South-Indian vadai.
+             <br><br>₹ 6       </p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/m.dosa.jpeg" alt="Masala Dosa">
+      <div class="desc">
+        <h3>Masala Dosa</h3>
+        <p>Golden crispy dosa filled with spicy potato masala.
+             <br><br> ₹ 40
+        </p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/g.dosa.jpeg" alt="Ghee">
+      <div class="desc">
+        <h3>Ghee dosa</h3>
+        <p>Golden crispy dosa filled with spicy potato masala.
+             <br><br> ₹40
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
